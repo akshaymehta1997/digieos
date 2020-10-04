@@ -1,16 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header {
+    position: relative;
+}
+
 .navbar-nav.navbar-right {
-  position: absolute;
-  right: 10rem;
+    position: absolute;
+    right: 8rem;
 }
 
-.navbar-nav li{
-  margin-left: 5rem;
+.navbar-nav li {
+    margin-left: 5rem;
 }
 
-.navbar-nav a{
-  font-size: 1.5rem;
-} 
+.navbar-nav a {
+    font-size: 1.1rem;
+    color: wheat !important;
+    font-weight: bold;
+}
 
-.nav{
-  color: transparent;
+.navbar {
+    background-color: transparent;
+    position: absolute !important;
+    top: 0 !important;
+    height: 50px;
+    width: 100vw;
+    z-index: 3;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+    opacity: 0.40;
+}
+
+.header-logo {
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    z-index: 2;
+}
+
+.bgVideo {
+    width: 100vw;
 }
