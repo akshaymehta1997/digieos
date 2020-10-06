@@ -2,18 +2,19 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    min-height: 150vh;
 }
 
 @font-face {
     font-family: my-header-font;
-    src: url('/fonts/Raleway/static/Raleway-Regular.ttf');
+    src: url('../fonts/Raleway/static/Raleway-Bold.ttf');
 }
 
 .header {
     position: relative;
+    padding: 42%;
     width: 100%;
-    height: 100vh;
-    background: url('/images/pexels-fauxels-3184464.jpg');
+    background-image: url('../images/bgheader.jpg');
     background-size: cover;
     /* background-attachment: fixed; */
     display: flex;
@@ -21,6 +22,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-position: center center;
+}
+
+.navbar-toggler{
+    background-color:white;
 }
 
 .navbar-nav.navbar-right {
@@ -33,16 +39,20 @@ body {
 }
 
 .navbar-nav a {
-    /* margin-top: 2em; */
+    font-family: my-header-font;
     font-size: 1.1rem;
     color: white !important;
     font-weight: bold;
-    /* border: solid;
-    border-radius: 2em; */
+    border-bottom: solid;
+    border-color: transparent;
+}
+
+.navbar-nav a:hover {
+  border-bottom: solid;
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: transparent;
     position: absolute !important;
     top: 0 !important;
     height: 50px;
@@ -51,7 +61,7 @@ body {
 }
 
 .header-overlay {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -69,10 +79,22 @@ body {
 .divtext {
     font-size: 2.5em;
     color: white;
-    font-weight: bold;
     font-family: my-header-font;
 }
 
 .container {
     text-align: center;
+}
+
+@media (min-width: 576px) {
+    .header {
+        padding: 0;
+        height: 100vh;
+    }
+}
+        
+@media (min-width: 992px) { 
+    .navbar{    
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 }
