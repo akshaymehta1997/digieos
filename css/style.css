@@ -10,6 +10,9 @@ body {
     src: url('../fonts/Raleway/static/Raleway-Bold.ttf');
 }
 
+
+/* ----------------------------------------------------------------------------------Header------------------------------------------------------------------ */
+
 .header {
     position: relative;
     height: 50vh;
@@ -23,41 +26,6 @@ body {
     text-align: center;
     background-position: center center;
     background-repeat: no-repeat;
-}
-
-.navbar-toggler{
-    background-color:white;
-}
-
-.navbar-nav.navbar-right {
-    position: absolute;
-    right: 8rem;
-}
-
-.navbar-nav li {
-    margin-left: 5rem;
-}
-
-.navbar-nav a {
-    font-family: my-header-font;
-    font-size: 1.1rem;
-    color: white !important;
-    font-weight: bold;
-    border-bottom: solid;
-    border-color: transparent;
-}
-
-.navbar-nav a:hover {
-  border-bottom: solid;
-}
-
-.navbar {
-    background-color: transparent;
-    position: absolute !important;
-    top: 0 !important;
-    height: 50px;
-    width: 100vw;
-    z-index: 3;
 }
 
 .header-overlay {
@@ -87,42 +55,169 @@ body {
     text-align: center;
 }
 
+
+/* -----------------------------------------------------NavBar------------------------------------------------------------------------ */
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+    background: transparent;
+    width: 100vw;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 5em;
+    z-index: 1003;
+}
+
+.nav-links li a {
+    font-family: my-header-font;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    z-index: 1005;
+    transition: all 0.5ms ease-out;
+    position: relative;
+}
+
+.nav-links li a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: white;
+    position: absolute;
+    bottom: -0.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+}
+
+.nav-links li a:hover::before {
+    transform: scale(1, 1);
+}
+
+
+/* ------------------------------------------------------------------------------Media Query----------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------Extra Small Device (phones) --------------------------------------------------------------------------------------- */
+
 @media (max-width: 600px) {
     .divtext {
         font-size: 1.9em;
     }
-    .header{
-    clip-path: circle(200vh at 50% -150vh);
-
+    .header {
+        clip-path: circle(200vh at 50% -150vh);
     }
 }
+
+
+/* ------------------------------------------------------------------------------Small Device (potrait tablets and large phone) -------------------------------------------------------------------------------------- */
+
 @media (min-width: 600px) {
     .divtext {
         font-size: 2.1em;
     }
-    .header{
-    clip-path: circle(250vh at 50% -200vh);
+    .header {
+        clip-path: circle(250vh at 50% -200vh);
     }
 }
+
+
+/* ------------------------------------------------------------------------------Medium Device (landscape tablets)-------------------------------------------------------------------------------------- */
 
 @media (min-width: 768px) {
     .divtext {
         font-size: 2.3em;
     }
-    .header{
-    clip-path: circle(300vh at 50% -250vh);
-
+    .header {
+        clip-path: circle(300vh at 50% -250vh);
     }
 }
 
 
+/* ------------------------------------------------------------------------------Large device (laptop and desktop)--------------------------------------------------------------------------------------- */
+
 @media (min-width: 992px) {
     .divtext {
         font-size: 2.5em;
-    }    
+    }
     .header {
         height: 80vh;
         background-size: cover;
         clip-path: circle(500vh at 50% -420vh);
     }
-}    
+}
+
+
+/* ------------------------------------------------------------------------------extra Large device (large laptop and desktop)--------------------------------------------------------------------------------------- */
+
+
+/* -----------------------------------------------------------------------------------Navbar--------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+        z-index: 1004;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 10%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 1004;
+    }
+    .nav-links {
+        position: fixed;
+        right: 0;
+        background: rgba(10, 0, 0, 0.8);
+        height: 60vh;
+        width: 100%;
+        display: block;
+        clip-path: circle(0px at 90% -10%);
+        -webkit-clip-path: circle(0px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        z-index: 1000;
+    }
+    .nav-links.open {
+        clip-path: circle(450px at 90% -15%);
+        -webkit-clip-path: circle(450px at 90% -20%);
+        pointer-events: all;
+    }
+    .nav-links li {
+        opacity: 0;
+        text-align: right;
+        margin-right: 20%;
+        margin-top: 50px;
+    }
+    .nav-links li a {
+        font-size: 18px;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+        opacity: 1;
+    }
+}
