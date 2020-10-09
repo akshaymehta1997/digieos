@@ -17,6 +17,7 @@ body {
     position: relative;
     height: 50vh;
     width: 100%;
+    background-color: #A57359;
     background-image: url('../images/bgheader.jpg');
     background-size: cover;
     background-attachment: fixed;
