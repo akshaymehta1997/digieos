@@ -1,7 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
     min-height: 150vh;
 }
 
@@ -17,8 +21,8 @@ body {
     position: relative;
     height: 50vh;
     width: 100%;
-    background-color: #A57359;
     background-image: url('../images/bgheader.jpg');
+    background-color: #A57359;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -120,6 +124,14 @@ nav {
     .header {
         clip-path: circle(200vh at 50% -150vh);
     }
+    /* .nav-links {
+        clip-path: circle(0px at 90% -20%);
+        -webkit-clip-path: circle(0px at 90% -20%);
+    }
+    .nav-links.open {
+        clip-path: circle(450px at 90% -10%);
+        -webkit-clip-path: circle(450px at 90% -10%);
+    } */
 }
 
 
@@ -207,6 +219,7 @@ nav {
         clip-path: circle(450px at 90% -10%);
         -webkit-clip-path: circle(450px at 90% -10%);
         pointer-events: all;
+        height: 410px;
     }
     .nav-links li {
         opacity: 0;
