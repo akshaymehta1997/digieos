@@ -112,7 +112,7 @@ nav {
 
 /* ------------------------------------------------------------------------------Extra Small Device (phones) --------------------------------------------------------------------------------------- */
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .divtext {
         font-size: 1.9em;
     }
@@ -124,7 +124,7 @@ nav {
 
 /* ------------------------------------------------------------------------------Small Device (potrait tablets and large phone) -------------------------------------------------------------------------------------- */
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
     .divtext {
         font-size: 2.1em;
     }
@@ -136,7 +136,7 @@ nav {
 
 /* ------------------------------------------------------------------------------Medium Device (landscape tablets)-------------------------------------------------------------------------------------- */
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .divtext {
         font-size: 2.3em;
     }
@@ -148,7 +148,7 @@ nav {
 
 /* ------------------------------------------------------------------------------Large device (laptop and desktop)--------------------------------------------------------------------------------------- */
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     .divtext {
         font-size: 2.5em;
     }
@@ -162,10 +162,18 @@ nav {
 
 /* ------------------------------------------------------------------------------extra Large device (large laptop and desktop)--------------------------------------------------------------------------------------- */
 
+@media only screen and (min-width: 1200px) {
+    .divtext {
+        font-size: 2.7em;
+    }
+    .nav-links li a {
+        font-size: 20px;
+    }
+}
 
-/* -----------------------------------------------------------------------------------Navbar--------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------------Navbar-mobile--------------------------------------------------------------------------- */
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .line {
         width: 30px;
         height: 3px;
@@ -176,8 +184,8 @@ nav {
     .hamburger {
         position: absolute;
         cursor: pointer;
-        right: 10%;
-        top: 50%;
+        right: 35px;
+        top: 35px;
         transform: translate(-5%, -50%);
         z-index: 1004;
     }
@@ -188,15 +196,15 @@ nav {
         height: 60vh;
         width: 100%;
         display: block;
-        clip-path: circle(0px at 90% -10%);
-        -webkit-clip-path: circle(0px at 90% -10%);
+        clip-path: circle(0px at 90% -20%);
+        -webkit-clip-path: circle(0px at 90% -20%);
         transition: all 1s ease-out;
         pointer-events: none;
         z-index: 1000;
     }
     .nav-links.open {
-        clip-path: circle(450px at 90% -15%);
-        -webkit-clip-path: circle(450px at 90% -20%);
+        clip-path: circle(450px at 90% -10%);
+        -webkit-clip-path: circle(450px at 90% -10%);
         pointer-events: all;
     }
     .nav-links li {
