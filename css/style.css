@@ -298,6 +298,11 @@ nav {
     .header {
         clip-path: circle(250vh at 50% -200vh);
     }
+
+    .hamburger {
+        right: 10px;
+    }
+
     .service-header {
         margin-top: 20px;
         font-size: 2em;
