@@ -256,8 +256,8 @@ nav {
         clip-path: circle(200vh at 50% -150vh);
     }
 
-     .hamburger {
-        right: 25px;
+    .hamburger {
+        right: 10px;
     }
 
     .service-header {
