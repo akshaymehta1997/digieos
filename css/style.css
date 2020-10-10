@@ -35,7 +35,7 @@ body {
 
 @font-face {
     font-family: my-header-font;
-    src: url('../fonts/Raleway/static/Raleway-Medium.ttf');
+    src: url('../fonts/Raleway/static/Raleway-SemiBold.ttf');
 }
 
 .btn {
@@ -155,6 +155,21 @@ nav {
     transform: scale(1, 1);
 }
 
+/* ------------------------------------------------------------------Slogan --------------------------------------------------------------------------------------------------- */
+
+.slogan diV:nth-child(2){
+    font-size: 2em;
+    font-family: my-header-font;
+    margin: 20px 5%;
+    text-align: center;
+}
+
+.slogan div:first-child,.slogan div:last-child{
+    height: 2px;
+    width: 20em;
+    background-color: black;
+    margin: 0 auto;
+}
 
 /* ------------------------------------------------------------------Service --------------------------------------------------------------------------------------------------- */
 
@@ -178,8 +193,6 @@ nav {
     width: 18em;
     height: 1.8px;
     background-color: black;
-    margin: 1em 0;
-    border-radius: 50px;
 }
 
 .col-service-content p {
@@ -261,6 +274,13 @@ nav {
         clip-path: circle(200vh at 50% -150vh);
     }
 
+    .slogan div:first-child, .slogan div:last-child {
+        width: 15em;
+    }
+
+    .slogan diV:nth-child(2){
+        font-size: 1.1em;
+    }
     .hamburger {
         right: 20px;
     }
@@ -302,6 +322,9 @@ nav {
     .header {
         clip-path: circle(250vh at 50% -200vh);
     }
+    .slogan div:nth-child(2){
+        font-size: 1.2em;
+    }
 
     .service-header {
         margin-top: 20px;
@@ -341,6 +364,11 @@ nav {
     .header {
         clip-path: circle(300vh at 50% -250vh);
     }
+
+    .slogan diV:nth-child(2){
+        font-size: 1.4em;
+    }
+
     .col-service-image {
         width: 300px;
         margin-right: 60px;
@@ -405,6 +433,9 @@ nav {
         background-size: cover;
         clip-path: circle(500vh at 50% -420vh);
     }
+    .slogan diV:nth-child(2){
+        font-size: 1.6em;
+    }
     .col-service-image {
         width: 350px;
         margin-right: 100px;
@@ -452,21 +483,25 @@ nav {
     .nav-links li a {
         font-size: 19px;
     }
-    .col-service-image {
-        width: 400px;
+
+    .slogan diV:nth-child(2){
+        font-size: 1.8em;
     }
     .col-service-content {
         width: calc(90% - 390px);
     }
-    .service-header {
-        margin-top: 85px;
-    }
+    /* .col-service-image {
+        width: 400px;
+    } */
+    /* .service-header {
+        margin-top: 75px;
+    } */
     .col-service-content p {
-        font-size: 1.5em;
+        font-size: 1.3em;
         line-height: 40px;
     }
     .service-header {
-        font-size: 3em;
+        font-size: 2.6em;
     }
     .social-media .service-line {
         width: 20.5em;
