@@ -370,7 +370,7 @@ nav {
     }
 
     .col-service-image {
-        width: 300px;
+        width: 200px;
         margin-right: 60px;
     }
 
@@ -382,7 +382,7 @@ nav {
         width: calc(90% - 290px);
     }
     .service-header {
-        margin-top: 50px;
+        margin-top: 15px;
     }
     .col-service-content p {
         font-size: 1em;
@@ -437,7 +437,7 @@ nav {
         font-size: 1.6em;
     }
     .col-service-image {
-        width: 350px;
+        width: 250px;
         margin-right: 100px;
     }
 
@@ -449,27 +449,27 @@ nav {
         width: calc(90% - 359px);
     }
     .service-header {
-        margin-top: 75px;
+        margin-top: 40px;
     }
     .col-service-content p {
-        font-size: 1.2em;
+        font-size: 1em;
         line-height: 35px;
     }
     .service-header {
-        font-size: 2.5em;
+        font-size: 2em;
     }
     .service-line {
         height: 2.4px;
     }
     .social-media .service-line {
-        width: 17em;
+        width: 14em;
     }
     .graphic-design .service-line {
-        width: 20em;
+        width: 16em;
     }
 
     .digital-growth .service-line {
-        width: 19em;
+        width: 15.5em;
     }
 }
 
@@ -490,27 +490,27 @@ nav {
     .col-service-content {
         width: calc(90% - 390px);
     }
-    /* .col-service-image {
-        width: 400px;
-    } */
-    /* .service-header {
-        margin-top: 75px;
-    } */
+    .col-service-image {
+        width: 300px;
+    }
+    .service-header {
+        margin-top: 43px;
+    }
     .col-service-content p {
-        font-size: 1.3em;
+        font-size: 1.2em;
         line-height: 40px;
     }
     .service-header {
-        font-size: 2.6em;
+        font-size: 2.4em;
     }
     .social-media .service-line {
-        width: 20.5em;
+        width: 17em;
     }
     .graphic-design .service-line {
-        width: 24em;
+        width: 19.5em;
     }
 
     .digital-growth .service-line {
-        width: 22.5em;
+        width: 18.5em;
     }
 }
