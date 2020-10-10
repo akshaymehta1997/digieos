@@ -15,6 +15,10 @@ section {
     content: "";
 } */
 
+.row{
+margin-top: 3em;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -157,6 +161,7 @@ nav {
 .col-service-image img {
     width: 100%;
     border-radius: 100%;
+    box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.4);
 }
 
 .col-service-image,
@@ -171,7 +176,7 @@ nav {
 
 .service-line {
     width: 18em;
-    height: 0.1em;
+    height: 1.8px;
     background-color: black;
     margin: 1em 0;
     border-radius: 50px;
@@ -374,6 +379,17 @@ nav {
     
     .service-line {
         margin: 1em 0;
+        height: 2px;
+    }
+    .social-media .service-line {
+        width: 14em;
+    }
+    .graphic-design .service-line {
+        width: 16em;
+    }
+
+    .digital-growth .service-line {
+        width: 15em;
     }
 }
 
@@ -412,7 +428,17 @@ nav {
         font-size: 2.5em;
     }
     .service-line {
-        width: 16.5em;
+        height: 2.4px;
+    }
+    .social-media .service-line {
+        width: 17em;
+    }
+    .graphic-design .service-line {
+        width: 20em;
+    }
+
+    .digital-growth .service-line {
+        width: 19em;
     }
 }
 
@@ -442,7 +468,14 @@ nav {
     .service-header {
         font-size: 3em;
     }
-    .service-line {
+    .social-media .service-line {
         width: 20.5em;
+    }
+    .graphic-design .service-line {
+        width: 24em;
+    }
+
+    .digital-growth .service-line {
+        width: 22.5em;
     }
 }
