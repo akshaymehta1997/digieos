@@ -1,5 +1,3 @@
-
-
 /* .row {
     display: flex;
     width: 100%;
@@ -12,7 +10,7 @@
     content: "";
 } */
 
-.row{
+.row {
     margin-top: 3em;
 }
 
@@ -22,14 +20,19 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     min-width: 100%;
-    background-color: #F8F8FF ;
+    background-color: #F8F8FF;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: my-header-font;
 }
 
-.bg-dark{
+.bg-dark {
     background-color: #2A2C3B;
 }
 
@@ -42,6 +45,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: my-header-font;
     src: url('../fonts/Raleway/static/Raleway-SemiBold.ttf');
 }
+
 section {
     padding: 5%;
     color: #2A2C3B;
@@ -163,34 +167,43 @@ nav {
     transform: scale(1, 1);
 }
 
+.nav-scrolled {
+    background-color: #2A2C3B;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    transition: all 1s;
+}
+
+
 /* ------------------------------------------------------------------Slogan --------------------------------------------------------------------------------------------------- */
 
-.slogan div:first-child, .slogan div:nth-child(2){
+.slogan div:first-child,
+.slogan div:nth-child(2) {
     font-family: my-header-font;
     text-align: center;
 }
 
-.slogan div:first-child{
+.slogan div:first-child {
     font-size: 1.4em;
 }
 
-.slogan div:nth-child(2){
+.slogan div:nth-child(2) {
     font-size: 2.3em;
 }
 
-.slogan div:last-child{
+.slogan div:last-child {
     font-size: 2em;
     font-family: my-content-font;
     margin: 0 5%;
     text-align: center;
 }
 
-.slogan div:nth-child(3){
+.slogan div:nth-child(3) {
     height: 2px;
     width: 20em;
     background-color: black;
     margin: 20px auto;
 }
+
 
 /* ------------------------------------------------------------------Service --------------------------------------------------------------------------------------------------- */
 
@@ -221,11 +234,12 @@ nav {
     margin: 0;
 }
 
+
 /* ------------------------------------------------------------------------------Testimonials----------------------------------------------------------------------------------- */
 
 figure {
     font-size: 18px;
-    background:  #F8F8FF;
+    background: #F8F8FF;
     display: block;
     margin: 1.5em;
     padding: .5em;
@@ -261,8 +275,8 @@ figcaption {
     width: 85%;
 }
 
-.glider-contain h1{
-    color:  #F8F8FF;
+.glider-contain h1 {
+    color: #F8F8FF;
     text-align: center;
 }
 
@@ -275,22 +289,21 @@ figcaption {
     right: -7%;
     top: 50%;
 }
+
+
 /* ------------------------------------------------------------------------------Footer----------------------------------------------------------------------------------- */
 
-.brand-outline{
+.brand-outline {
     display: inline-block;
     text-align: center;
     height: 64px;
     width: 64px;
-    border:solid  #2A2C3B;
+    border: solid #2A2C3B;
     border-radius: 50%;
-    color:  #2A2C3B;
+    color: #2A2C3B;
     font-size: 30px;
     line-height: 64px;
 }
-
-
-
 
 
 /* ------------------------------------------------------------------------------Media Query----------------------------------------------------------------------------------- */
@@ -356,6 +369,7 @@ figcaption {
     }
 }
 
+
 /* ------------------------------------------------------------------------------Extra Small Device (phones) --------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 600px) {
@@ -365,26 +379,21 @@ figcaption {
     .header {
         clip-path: circle(200vh at 50% -150vh);
     }
-
-    .slogan div:first-child{
+    .slogan div:first-child {
         font-size: 1em;
     }
-    
-    .slogan div:nth-child(2){
+    .slogan div:nth-child(2) {
         font-size: 1.7em;
     }
-
-    .slogan div:nth-child(3){
+    .slogan div:nth-child(3) {
         width: 15em;
     }
-
-    .slogan diV:last-child{
+    .slogan diV:last-child {
         font-size: 1.1em;
     }
     .hamburger {
         right: 20px;
     }
-
     .service-header {
         margin-top: 20px;
         font-size: 1.7em;
@@ -392,20 +401,17 @@ figcaption {
     .col-service-content p {
         line-height: 30px;
     }
-
     .col-service-image img {
         width: 50%;
         border-radius: 100%;
         margin: 0 auto;
     }
-
     .col-service-image,
     .col-service-content {
         text-align: center;
         display: block;
         width: 100vw;
     }
-    
     .service-line {
         width: 14em;
         margin: 1em auto;
@@ -425,46 +431,37 @@ figcaption {
     .header {
         clip-path: circle(250vh at 50% -200vh);
     }
-
-    .slogan div:first-child{
+    .slogan div:first-child {
         font-size: 1.2em;
     }
-    
-    .slogan div:nth-child(2){
+    .slogan div:nth-child(2) {
         font-size: 1.9em;
     }
-
-    .slogan div:last-child{
+    .slogan div:last-child {
         font-size: 1.2em;
     }
-
     .service-header {
         margin-top: 20px;
         font-size: 2em;
-
     }
     .col-service-content p {
         line-height: 30px;
     }
-
     .col-service-image img {
         width: 50%;
         border-radius: 100%;
         margin: 0 auto;
     }
-
     .col-service-image,
     .col-service-content {
         text-align: center;
         display: block;
         width: 100%;
     }
-    
     .service-line {
         width: 18em;
         margin: 1em auto;
     }
-
     figure {
         font-size: 10px;
     }
@@ -480,29 +477,22 @@ figcaption {
     .header {
         clip-path: circle(300vh at 50% -250vh);
     }
-
-    .slogan div:first-child{
+    .slogan div:first-child {
         font-size: 1.6em;
     }
-
-    
-    .slogan div:nth-child(2){
+    .slogan div:nth-child(2) {
         font-size: 2.3em;
     }
-
-    .slogan div:last-child{
+    .slogan div:last-child {
         font-size: 1.4em;
     }
-
     .col-service-image {
         width: 200px;
         margin-right: 60px;
     }
-
-    .image-right-lg{
+    .image-right-lg {
         margin: 0 0 0 60px;
     }
-
     .col-service-content {
         width: calc(90% - 190px);
     }
@@ -519,17 +509,14 @@ figcaption {
     .service-line {
         width: 14em;
     }
-
     .col-service-image img {
         width: 100%;
     }
-
     .col-service-image,
     .col-service-content {
         text-align: unset;
         display: inline-block;
     }
-    
     .service-line {
         margin: 1em 0;
         height: 2px;
@@ -540,11 +527,9 @@ figcaption {
     .graphic-design .service-line {
         width: 16em;
     }
-
     .digital-growth .service-line {
         width: 15em;
     }
-
     figure {
         font-size: 12px;
     }
@@ -562,23 +547,19 @@ figcaption {
         background-size: cover;
         clip-path: circle(500vh at 50% -420vh);
     }
-
-    .slogan div:first-child{
+    .slogan div:first-child {
         font-size: 1.5em;
     }
-
-    .slogan div:last-child{
+    .slogan div:last-child {
         font-size: 1.3em;
     }
     .col-service-image {
         width: 250px;
         margin-right: 100px;
     }
-
-    .image-right-lg{
+    .image-right-lg {
         margin: 0 0 0 100px;
     }
-
     .col-service-content {
         width: calc(90% - 260px);
     }
@@ -601,11 +582,9 @@ figcaption {
     .graphic-design .service-line {
         width: 16em;
     }
-
     .digital-growth .service-line {
         width: 15.5em;
     }
-
     figure {
         font-size: 14px;
     }
@@ -621,12 +600,10 @@ figcaption {
     .nav-links li a {
         font-size: 19px;
     }
-
-    .slogan div:first-child{
+    .slogan div:first-child {
         font-size: 1.5em;
     }
-
-    .slogan div:last-child{
+    .slogan div:last-child {
         font-size: 1.3em;
     }
     .col-service-content {
@@ -651,11 +628,9 @@ figcaption {
     .graphic-design .service-line {
         width: 19.5em;
     }
-
     .digital-growth .service-line {
         width: 18.5em;
     }
-
     figure {
         font-size: 16px;
     }
