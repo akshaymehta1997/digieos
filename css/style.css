@@ -22,8 +22,11 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     min-width: 100%;
-    min-height: 300vh;
     background-color: #F8F8FF ;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: my-header-font;
 }
 
 .bg-dark{
@@ -107,7 +110,6 @@ section {
     z-index: 3;
     color: white;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-    font-family: my-header-font;
 }
 
 
@@ -218,6 +220,77 @@ nav {
     font-family: my-content-font;
     margin: 0;
 }
+
+/* ------------------------------------------------------------------------------Testimonials----------------------------------------------------------------------------------- */
+
+figure {
+    font-size: 18px;
+    background:  #F8F8FF;
+    display: block;
+    margin: 1.5em;
+    padding: .5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+figure backquote {
+    font-family: my-header-font;
+    padding: 0.5em;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+figure img {
+    border-radius: 50%;
+    height: 4em;
+}
+
+figcaption {
+    font-family: my-content-font;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+}
+
+.glider-contain {
+    width: 85%;
+}
+
+.glider-contain h1{
+    color:  #F8F8FF;
+    text-align: center;
+}
+
+.glider-prev {
+    left: -7%;
+    top: 50%;
+}
+
+.glider-next {
+    right: -7%;
+    top: 50%;
+}
+/* ------------------------------------------------------------------------------Footer----------------------------------------------------------------------------------- */
+
+.brand-outline{
+    display: inline-block;
+    text-align: center;
+    height: 64px;
+    width: 64px;
+    border:solid  #2A2C3B;
+    border-radius: 50%;
+    color:  #2A2C3B;
+    font-size: 30px;
+    line-height: 64px;
+}
+
+
+
 
 
 /* ------------------------------------------------------------------------------Media Query----------------------------------------------------------------------------------- */
@@ -337,6 +410,9 @@ nav {
         width: 14em;
         margin: 1em auto;
     }
+    figure {
+        font-size: 8px;
+    }
 }
 
 
@@ -387,6 +463,10 @@ nav {
     .service-line {
         width: 18em;
         margin: 1em auto;
+    }
+
+    figure {
+        font-size: 10px;
     }
 }
 
@@ -464,6 +544,10 @@ nav {
     .digital-growth .service-line {
         width: 15em;
     }
+
+    figure {
+        font-size: 12px;
+    }
 }
 
 
@@ -521,6 +605,10 @@ nav {
     .digital-growth .service-line {
         width: 15.5em;
     }
+
+    figure {
+        font-size: 14px;
+    }
 }
 
 
@@ -566,5 +654,9 @@ nav {
 
     .digital-growth .service-line {
         width: 18.5em;
+    }
+
+    figure {
+        font-size: 16px;
     }
 }
