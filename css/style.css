@@ -1,7 +1,4 @@
 
-section {
-    margin: 5%;
-}
 
 /* .row {
     display: flex;
@@ -16,7 +13,7 @@ section {
 } */
 
 .row{
-margin-top: 3em;
+    margin-top: 3em;
 }
 
 body {
@@ -36,6 +33,10 @@ body {
 @font-face {
     font-family: my-header-font;
     src: url('../fonts/Raleway/static/Raleway-SemiBold.ttf');
+}
+section {
+    margin: 5%;
+    color: #2A2C3B;
 }
 
 .btn {
@@ -157,18 +158,31 @@ nav {
 
 /* ------------------------------------------------------------------Slogan --------------------------------------------------------------------------------------------------- */
 
-.slogan diV:nth-child(2){
-    font-size: 2em;
+.slogan div:first-child, .slogan div:nth-child(2){
     font-family: my-header-font;
-    margin: 20px 5%;
     text-align: center;
 }
 
-.slogan div:first-child,.slogan div:last-child{
+.slogan div:first-child{
+    font-size: 1.4em;
+}
+
+.slogan div:nth-child(2){
+    font-size: 2.3em;
+}
+
+.slogan div:last-child{
+    font-size: 2em;
+    font-family: my-content-font;
+    margin: 0 5%;
+    text-align: center;
+}
+
+.slogan div:nth-child(3){
     height: 2px;
     width: 20em;
     background-color: black;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 /* ------------------------------------------------------------------Service --------------------------------------------------------------------------------------------------- */
@@ -225,7 +239,7 @@ nav {
     .nav-links {
         position: fixed;
         right: 0;
-        background: rgba(10, 0, 0, 0.8);
+        background: rgba(15, 17, 29, 0.83);
         height: 60vh;
         width: 100%;
         display: block;
@@ -274,11 +288,19 @@ nav {
         clip-path: circle(200vh at 50% -150vh);
     }
 
-    .slogan div:first-child, .slogan div:last-child {
+    .slogan div:first-child{
+        font-size: 1.2em;
+    }
+    
+    .slogan div:nth-child(2){
+        font-size: 1.7em;
+    }
+
+    .slogan div:nth-child(3){
         width: 15em;
     }
 
-    .slogan diV:nth-child(2){
+    .slogan diV:last-child{
         font-size: 1.1em;
     }
     .hamburger {
@@ -322,7 +344,16 @@ nav {
     .header {
         clip-path: circle(250vh at 50% -200vh);
     }
+
+    .slogan div:first-child{
+        font-size: 1.2em;
+    }
+    
     .slogan div:nth-child(2){
+        font-size: 1.9em;
+    }
+
+    .slogan div:last-child{
         font-size: 1.2em;
     }
 
@@ -365,7 +396,16 @@ nav {
         clip-path: circle(300vh at 50% -250vh);
     }
 
-    .slogan diV:nth-child(2){
+    .slogan div:first-child{
+        font-size: 1.6em;
+    }
+
+    
+    .slogan div:nth-child(2){
+        font-size: 2.3em;
+    }
+
+    .slogan div:last-child{
         font-size: 1.4em;
     }
 
@@ -379,7 +419,7 @@ nav {
     }
 
     .col-service-content {
-        width: calc(90% - 290px);
+        width: calc(90% - 190px);
     }
     .service-header {
         margin-top: 15px;
@@ -433,8 +473,13 @@ nav {
         background-size: cover;
         clip-path: circle(500vh at 50% -420vh);
     }
-    .slogan diV:nth-child(2){
-        font-size: 1.6em;
+
+    .slogan div:first-child{
+        font-size: 1.5em;
+    }
+
+    .slogan div:last-child{
+        font-size: 1.3em;
     }
     .col-service-image {
         width: 250px;
@@ -446,7 +491,7 @@ nav {
     }
 
     .col-service-content {
-        width: calc(90% - 359px);
+        width: calc(90% - 260px);
     }
     .service-header {
         margin-top: 40px;
@@ -484,11 +529,15 @@ nav {
         font-size: 19px;
     }
 
-    .slogan diV:nth-child(2){
-        font-size: 1.8em;
+    .slogan div:first-child{
+        font-size: 1.5em;
+    }
+
+    .slogan div:last-child{
+        font-size: 1.3em;
     }
     .col-service-content {
-        width: calc(90% - 390px);
+        width: calc(90% - 291px);
     }
     .col-service-image {
         width: 300px;
