@@ -23,6 +23,11 @@ body {
     overflow-y: scroll;
     min-width: 100%;
     min-height: 300vh;
+    background-color: #F8F8FF ;
+}
+
+.bg-dark{
+    background-color: #2A2C3B;
 }
 
 @font-face {
@@ -35,7 +40,7 @@ body {
     src: url('../fonts/Raleway/static/Raleway-SemiBold.ttf');
 }
 section {
-    margin: 5%;
+    padding: 5%;
     color: #2A2C3B;
 }
 
