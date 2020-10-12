@@ -21,6 +21,7 @@ body {
     overflow-y: scroll;
     min-width: 100%;
     background-color: #F8F8FF;
+    min-height: 1000vh;
 }
 
 h1,
@@ -34,6 +35,13 @@ h6 {
 
 .bg-dark {
     background-color: #2A2C3B;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 @font-face {
@@ -419,6 +427,10 @@ figcaption {
     figure {
         font-size: 8px;
     }
+    .testimonials{
+        height: 35vh;
+        clip-path: circle(200vh at 50% -165vh);
+    }
 }
 
 
@@ -464,6 +476,11 @@ figcaption {
     }
     figure {
         font-size: 10px;
+    }
+
+    .testimonials{
+        height: 38vh;
+        clip-path: circle(250vh at 50% -212vh);
     }
 }
 
@@ -533,6 +550,11 @@ figcaption {
     figure {
         font-size: 12px;
     }
+
+    .testimonials{
+        height: 55vh;
+        clip-path: circle(300vh at 50% -245vh);
+    }
 }
 
 
@@ -542,6 +564,7 @@ figcaption {
     .divtext {
         font-size: 40px;
     }
+
     .header {
         height: 80vh;
         background-size: cover;
@@ -588,6 +611,11 @@ figcaption {
     figure {
         font-size: 14px;
     }
+
+    .testimonials{
+        height: 60vh;
+        clip-path: circle(500vh at 50% -440vh);
+    }
 }
 
 
@@ -633,5 +661,10 @@ figcaption {
     }
     figure {
         font-size: 16px;
+    }
+
+    .testimonials{
+        height: 65vh;        
+        clip-path: circle(500vh at 50% -435vh);
     }
 }

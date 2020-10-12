@@ -54,7 +54,7 @@ const header = document.querySelector("#navbarScroll");
 const sectionOne = document.querySelector("#serviceScroll");
 
 const sectionOneOptions = {
-    rootMargin: "0px 0px 0px 0px"
+    rootMargin: "-85px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(
