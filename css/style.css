@@ -21,7 +21,7 @@ body {
     overflow-y: scroll;
     min-width: 100%;
     background-color: #F8F8FF;
-    min-height: 1000vh;
+    /* min-height: 1000vh; */
 }
 
 h1,
@@ -425,11 +425,15 @@ figcaption {
         margin: 1em auto;
     }
     figure {
-        font-size: 8px;
+        font-size: 7px;
     }
     .testimonials{
         height: 35vh;
         clip-path: circle(200vh at 50% -165vh);
+    }
+
+    .glider-contain h1 {
+        font-size:15px;
     }
 }
 

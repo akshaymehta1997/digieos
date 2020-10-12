@@ -31,6 +31,8 @@ function toggleSlidestoShow() {
     }
 }
 
+toggleSlidestoShow();
+
 new Glider(document.querySelector('.glider'), {
     slidesToShow: 1,
     draggable: true,
@@ -43,7 +45,6 @@ new Glider(document.querySelector('.glider'), {
         breakpoint: 768,
         settings: {
             slidesToShow: 2,
-
         }
     }]
 })
