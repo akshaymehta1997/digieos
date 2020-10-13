@@ -9,7 +9,6 @@
     clear: both;
     content: "";
 } */
-
 .row {
     margin-top: 3em;
 }
@@ -35,6 +34,10 @@ h6 {
 
 .bg-dark {
     background-color: #2A2C3B;
+}
+
+.bg-light{
+    background-color: #F8F8FF;
 }
 
 .center {
@@ -242,7 +245,6 @@ nav {
     margin: 0;
 }
 
-
 /* ------------------------------------------------------------------------------Testimonials----------------------------------------------------------------------------------- */
 
 figure {
@@ -298,6 +300,9 @@ figcaption {
     top: 50%;
 }
 
+.footer-bg-color{
+    background-color: #646C79;
+}
 
 /* ------------------------------------------------------------------------------Footer----------------------------------------------------------------------------------- */
 
@@ -452,6 +457,9 @@ figcaption {
         width: 14em;
         margin: 1em auto;
     }
+    .services{
+        clip-path: circle(200vh at 50% -27vh);
+    }
     figure {
         font-size: 2vw;
     }
@@ -516,6 +524,9 @@ figcaption {
     .service-line {
         width: 18em;
         margin: 1em auto;
+    }
+    .services{
+        clip-path: circle(250vh at 50% -61vh);
     }
     figure {
         font-size: 10px;
@@ -595,6 +606,9 @@ figcaption {
     .digital-growth .service-line {
         width: 15em;
     }
+    .services{
+        clip-path: circle(300vh at 50% -190vh);
+    }
     figure {
         font-size: 12px;
     }
@@ -660,6 +674,9 @@ figcaption {
     .digital-growth .service-line {
         width: 15.5em;
     }
+    .services{
+        clip-path: circle(500vh at 50% -373vh);
+    }
     figure {
         font-size: 14px;
     }
@@ -715,6 +732,9 @@ figcaption {
     }
     .digital-growth .service-line {
         width: 18.5em;
+    }
+    .services{
+        clip-path: circle(500vh at 50% -355vh);
     }
     figure {
         font-size: 16px;
