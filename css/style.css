@@ -425,7 +425,7 @@ figcaption {
         margin: 1em auto;
     }
     figure {
-        font-size: 7px;
+        font-size: 2vw;
     }
     .testimonials{
         height: 35vh;
@@ -434,6 +434,7 @@ figcaption {
 
     .glider-contain h1 {
         font-size:15px;
+        margin: 0;
     }
 }
 
