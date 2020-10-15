@@ -10,9 +10,7 @@
     content: "";
 } */
 
-.curve-svg{
-    width: 100vw;
-}
+
 .row {
     margin-top: 3em;
 }
@@ -117,8 +115,9 @@ section {
     opacity: 0.40;
 }
 
-.svg-color-light{
-    fill: black;
+.curve-svg{
+    height: rem;
+    width: 100vw;
 }
 
 .relative{
@@ -128,8 +127,7 @@ section {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 10px;
-    z-index: 1000;
+    z-index: 1;
 }
 .header-logo {
     height: 5em;
@@ -442,8 +440,8 @@ figcaption {
     .divtext {
         font-size: 27px;
     }
-    .header {
-        /* clip-path: circle(200vh at 50% -150vh); */
+    .curve-svg{
+        height: 4rem;
     }
     .slogan div:first-child {
         font-size: 1em;
@@ -483,14 +481,14 @@ figcaption {
         margin: 1em auto;
     }
     .services{
-        clip-path: circle(200vh at 50% -27vh);
+        /* clip-path: circle(200vh at 50% -27vh); */
     }
     figure {
         font-size: 2vw;
     }
     .testimonials {
         height: 35vh;
-        clip-path: circle(200vh at 50% -165vh);
+        /* clip-path: circle(200vh at 50% -165vh); */
     }
     .glider-contain h1 {
         font-size: 5vw;
@@ -516,8 +514,8 @@ figcaption {
     .divtext {
         font-size: 33.6px;
     }
-    .header {
-        /* clip-path: circle(250vh at 50% -200vh); */
+    .curve-svg{
+        height: 4rem;
     }
     .slogan div:first-child {
         font-size: 1.2em;
@@ -551,14 +549,14 @@ figcaption {
         margin: 1em auto;
     }
     .services{
-        clip-path: circle(250vh at 50% -61vh);
+        /* clip-path: circle(250vh at 50% -61vh); */
     }
     figure {
         font-size: 10px;
     }
     .testimonials {
         height: 38vh;
-        clip-path: circle(250vh at 50% -212vh);
+        /* clip-path: circle(250vh at 50% -212vh); */
     }
     .brand-outline {
         line-height: 45px;
@@ -575,8 +573,8 @@ figcaption {
     .divtext {
         font-size: 36.8px;
     }
-    .header {
-        /* clip-path: circle(300vh at 50% -250vh); */
+    .curve-svg{
+        height: 5rem;
     }
     .slogan div:first-child {
         font-size: 1.6em;
@@ -632,14 +630,14 @@ figcaption {
         width: 15em;
     }
     .services{
-        clip-path: circle(300vh at 50% -191vh);
+        /* clip-path: circle(300vh at 50% -191vh); */
     }
     figure {
         font-size: 12px;
     }
     .testimonials {
         height: 55vh;
-        clip-path: circle(300vh at 50% -245vh);
+        /* clip-path: circle(300vh at 50% -245vh); */
     }
     .brand-outline {
         line-height: 50px;
@@ -661,7 +659,9 @@ figcaption {
         height: 80vh;
         background-size: cover;
     }
-
+    .curve-svg{
+        height: 6rem;
+    }
     .col-service-image {
         width: 250px;
         margin-right: 100px;
@@ -695,14 +695,14 @@ figcaption {
         width: 15.5em;
     }
     .services{
-        clip-path: circle(4000px at 50% -3490px);
+        /* clip-path: circle(4000px at 50% -3490px); */
     }
     figure {
         font-size: 14px;
     }
     .testimonials {
         height: 60vh;
-        clip-path: circle(500vh at 50% -440vh);
+        /* clip-path: circle(500vh at 50% -440vh); */
     }
     .brand-outline {
         line-height: 54px;
@@ -718,6 +718,9 @@ figcaption {
 @media only screen and (min-width: 1200px) {
     .divtext {
         font-size: 43.2px;
+    }
+    .curve-svg{
+        height: 8rem;
     }
     .nav-links li a {
         font-size: 19px;
@@ -754,14 +757,14 @@ figcaption {
         width: 18.5em;
     }
     .services{
-        clip-path: circle(500vh at 50% -355vh);
+        /* clip-path: circle(500vh at 50% -355vh); */
     }
     figure {
         font-size: 16px;
     }
     .testimonials {
         height: 65vh;
-        clip-path: circle(500vh at 50% -435vh);
+        /* clip-path: circle(500vh at 50% -435vh); */
     }
     .brand-outline {
         line-height: 64px;
