@@ -9,6 +9,10 @@
     clear: both;
     content: "";
 } */
+
+.curve-svg{
+    width: 100vw;
+}
 .row {
     margin-top: 3em;
 }
@@ -113,6 +117,20 @@ section {
     opacity: 0.40;
 }
 
+.svg-color-light{
+    fill: black;
+}
+
+.relative{
+    position: relative;
+}
+.svg-header{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    z-index: 1000;
+}
 .header-logo {
     height: 5em;
 }
@@ -137,6 +155,13 @@ nav {
     height: 60px;
     background: transparent;
     width: 100vw;
+}
+
+.svgLogo {
+    line-height: 40px;
+    position: fixed;
+    left: 5em;
+    top: 10px;
 }
 
 .nav-links {
@@ -418,7 +443,7 @@ figcaption {
         font-size: 27px;
     }
     .header {
-        clip-path: circle(200vh at 50% -150vh);
+        /* clip-path: circle(200vh at 50% -150vh); */
     }
     .slogan div:first-child {
         font-size: 1em;
@@ -492,7 +517,7 @@ figcaption {
         font-size: 33.6px;
     }
     .header {
-        clip-path: circle(250vh at 50% -200vh);
+        /* clip-path: circle(250vh at 50% -200vh); */
     }
     .slogan div:first-child {
         font-size: 1.2em;
@@ -551,7 +576,7 @@ figcaption {
         font-size: 36.8px;
     }
     .header {
-        clip-path: circle(300vh at 50% -250vh);
+        /* clip-path: circle(300vh at 50% -250vh); */
     }
     .slogan div:first-child {
         font-size: 1.6em;
@@ -607,7 +632,7 @@ figcaption {
         width: 15em;
     }
     .services{
-        clip-path: circle(300vh at 50% -190vh);
+        clip-path: circle(300vh at 50% -191vh);
     }
     figure {
         font-size: 12px;
@@ -632,16 +657,11 @@ figcaption {
         font-size: 40px;
     }
     .header {
+        position: relative;
         height: 80vh;
         background-size: cover;
-        clip-path: circle(500vh at 50% -420vh);
     }
-    .slogan div:first-child {
-        font-size: 1.5em;
-    }
-    .slogan div:last-child {
-        font-size: 1.3em;
-    }
+
     .col-service-image {
         width: 250px;
         margin-right: 100px;
@@ -675,7 +695,7 @@ figcaption {
         width: 15.5em;
     }
     .services{
-        clip-path: circle(500vh at 50% -373vh);
+        clip-path: circle(4000px at 50% -3490px);
     }
     figure {
         font-size: 14px;

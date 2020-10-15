@@ -53,6 +53,7 @@ window.addEventListener('resize', toggleSlidestoShow)
 
 const header = document.querySelector("#navbarScroll");
 const sectionOne = document.querySelector("#serviceScroll");
+const svgLogo = document.querySelector(".svgLogo");
 
 const sectionOneOptions = {
     rootMargin: "-85px"
@@ -65,8 +66,10 @@ const sectionOneObserver = new IntersectionObserver(function(
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
                 header.classList.add("nav-scrolled");
+                svgLogo.style.opacity = 1;
             } else {
                 header.classList.remove("nav-scrolled");
+                svgLogo.style.opacity = 0;
             }
         });
     },
