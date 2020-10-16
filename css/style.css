@@ -60,7 +60,7 @@ h6 {
 }
 
 section {
-    padding: 5%;
+    /* padding: 5%; */
     color: #2A2C3B;
 }
 
@@ -125,7 +125,7 @@ section {
 }
 .svg-header{
     position: absolute;
-    bottom: 0;
+    bottom: -1.8px;
     left: 0;
     z-index: 1000;
 }
@@ -241,6 +241,10 @@ nav {
 
 /* ------------------------------------------------------------------Service --------------------------------------------------------------------------------------------------- */
 
+.services{
+    padding:5%;
+}
+
 .col-service-image img {
     width: 100%;
     border-radius: 100%;
@@ -269,6 +273,11 @@ nav {
 }
 
 /* ------------------------------------------------------------------------------Testimonials----------------------------------------------------------------------------------- */
+
+.testimonials {
+    padding: 3% 5% 3% 5%;
+    height: calc(100% + 50px);
+}
 
 figure {
     font-size: 18px;
@@ -342,7 +351,7 @@ figcaption {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2em;
+    padding: 3% 0 1% 0;
 }
 
 .brand-outline {
@@ -487,7 +496,7 @@ figcaption {
         font-size: 2vw;
     }
     .testimonials {
-        height: 35vh;
+        /* height: 35vh; */
         /* clip-path: circle(200vh at 50% -165vh); */
     }
     .glider-contain h1 {
@@ -555,7 +564,7 @@ figcaption {
         font-size: 10px;
     }
     .testimonials {
-        height: 38vh;
+        /* height: 38vh; */
         /* clip-path: circle(250vh at 50% -212vh); */
     }
     .brand-outline {
@@ -636,7 +645,7 @@ figcaption {
         font-size: 12px;
     }
     .testimonials {
-        height: 55vh;
+        /* height: 55vh; */
         /* clip-path: circle(300vh at 50% -245vh); */
     }
     .brand-outline {
@@ -660,7 +669,7 @@ figcaption {
         background-size: cover;
     }
     .curve-svg{
-        height: 6rem;
+        height: 3rem;
     }
     .col-service-image {
         width: 250px;
@@ -701,7 +710,7 @@ figcaption {
         font-size: 14px;
     }
     .testimonials {
-        height: 60vh;
+        /* height: 60vh; */
         /* clip-path: circle(500vh at 50% -440vh); */
     }
     .brand-outline {
@@ -720,7 +729,7 @@ figcaption {
         font-size: 43.2px;
     }
     .curve-svg{
-        height: 8rem;
+        height: 5rem;
     }
     .nav-links li a {
         font-size: 19px;
@@ -763,7 +772,7 @@ figcaption {
         font-size: 16px;
     }
     .testimonials {
-        height: 65vh;
+        /* height: 545px; */
         /* clip-path: circle(500vh at 50% -435vh); */
     }
     .brand-outline {
