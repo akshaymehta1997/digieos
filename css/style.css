@@ -112,7 +112,7 @@ section {
 }
 .svg-header{
     position: absolute;
-    bottom: -0.3px;
+    bottom: -0.8px;
     left: 0;
     z-index: 10;
 }
