@@ -112,7 +112,7 @@ section {
 }
 .svg-header{
     position: absolute;
-    bottom: -1px;
+    bottom: 0px;
     left: 0;
     z-index: 10;
 }
@@ -437,7 +437,7 @@ figcaption {
         font-size: 27px;
     }
     .curve-svg{
-        height: 2rem;
+        height: 1.5rem;
     }
     .slogan div:first-child {
         font-size: 1em;
