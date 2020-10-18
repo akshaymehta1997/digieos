@@ -12,7 +12,7 @@ function toggleSlidestoShow() {
         document.querySelector(".graphic-design").innerHTML =
             `<div class="col-service-content">
         <div class="col-service-image image-right-lg">
-        <img src="./temp/graphic.jpg">
+        <img src="./assets/images/home/services/graphic.jpg">
         </div>
         <h1 class="service-header">Graphic design</h1>
         <div class="service-line "></div>
@@ -27,7 +27,7 @@ function toggleSlidestoShow() {
             brand
             stories with each design.</p>
     </div>
-    <div class="col-service-image image-right-lg"><img src="./temp/graphic.jpg"></div>`
+    <div class="col-service-image image-right-lg"><img src="./assets/images/home/services/graphic.jpg"></div>`
     }
 }
 
