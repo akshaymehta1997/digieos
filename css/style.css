@@ -15,7 +15,6 @@ body {
     overflow-y: scroll;
     min-width: 100%;
     background-color: #F8F8FF;
-    /* min-height: 1000vh; */
 }
 
 h1,
@@ -332,12 +331,18 @@ figcaption {
 /* ------------------------------------------------------------------------------Footer----------------------------------------------------------------------------------- */
 
 .footer {
-    background-color: #646C79;
+    background-image: url("../assets/images/ps2pdf.com.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    /* background-color: #646C79; */
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
 .footer-items {
+    background-color: rgba(42, 44, 59, 0.7);
     width: 100%;
     text-align: center;
     display: flex;
@@ -350,9 +355,9 @@ figcaption {
 .brand-outline {
     display: inline-block;
     text-align: center;
-    border: 3px solid #2A2C3B;
+    border: 3px solid white;
     border-radius: 50%;
-    color: #2A2C3B;
+    color: white;
     margin-left: 0.35em;
     margin-right: 0.35em;
     margin-bottom: 0.5em;
@@ -364,13 +369,12 @@ figcaption {
     margin-bottom: 1em;
     font-size: 1em;
     font-weight: bold;
-    color: whitesmoke;
+    color: white;
 }
 
 .policy div a:first-child {
-    color: #ff6347;
+    color: #ff4e2e;
 }
-
 
 /* ------------------------------------------------------------------------------Media Query----------------------------------------------------------------------------------- */
 
@@ -608,6 +612,17 @@ figcaption {
         margin: 1em 0;
         height: 2px;
     }
+    .graphic-design .col-service-content{
+        text-align: right;
+    }
+    .graphic-design .col-service-content p{
+        margin-top: 44px;
+    }
+    
+    .graphic-design .col-service-content .service-line{
+        float: right;
+    }
+    
     .social-media .service-line {
         width: 14em;
     }
