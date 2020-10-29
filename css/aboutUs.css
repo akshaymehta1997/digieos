@@ -1,0 +1,46 @@
+
+.header div:nth-child(1) {
+  font-size: 2.3em;
+  font-family: my-header-font;
+  text-align: center;
+}
+
+.slogan-line {
+  width: 13em;
+  margin-bottom: 2em;
+}
+
+.brief p{
+  font-size: 1.2em;
+}
+
+/* ------------------------------------------------------------------------------Media Query----------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------Small Device (potrait tablets and large phone) -------------------------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 600px) {
+  .brief p{
+    font-size: 1em;
+
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .brief p{
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .brief p{
+    font-size: 24px;
+  }
+}

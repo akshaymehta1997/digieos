@@ -55,6 +55,15 @@ section {
   color: #2A2C3B;
 }
 
+*{
+  font-family: my-content-font;
+}
+.slogan-line {
+  height: 2px;
+  width: 20em;
+  background-color: black;
+  margin: 20px auto;
+}
 /* -----------------------------------------------------NavBar------------------------------------------------------------------------ */
 
 nav {

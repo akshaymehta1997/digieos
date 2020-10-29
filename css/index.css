@@ -99,15 +99,6 @@
     margin: 0 5%;
     text-align: center;
 }
-
-.slogan div:nth-child(3) {
-    height: 2px;
-    width: 20em;
-    background-color: black;
-    margin: 20px auto;
-}
-
-
 /* ------------------------------------------------------------------Service --------------------------------------------------------------------------------------------------- */
 
 .services{
