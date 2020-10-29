@@ -1,0 +1,488 @@
+/* ----------------------------------------------------------------------------------Header------------------------------------------------------------------ */
+
+.header {
+    position: relative;
+    height: 50vh;
+    min-height: 320px;
+    width: 100%;
+    background-image: url('../assets/images/home/bgheader.jpg');
+    background-color: #A57359;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.header-overlay {
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+    opacity: 0.40;
+}
+
+.curve-svg{
+    height: rem;
+    width: 100vw;
+}
+
+.relative{
+    position: relative;
+}
+.svg-header{
+    position: absolute;
+    bottom: -0.8px;
+    left: 0;
+    z-index: 10;
+}
+.header-logo {
+    height: 5em;
+}
+
+.divtext div {
+    margin: 25px auto;
+}
+
+.divtext {
+    z-index: 3;
+    color: white;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.header .btn {
+    display: inline-block;
+    font-size: 0.45em;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1em 2em;
+    border-radius: 30px;
+}
+
+.header .btn:hover {
+    color: #684b38;
+    background-color: white;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.header .btn:focus {
+    outline: none;
+}
+
+/* ------------------------------------------------------------------Slogan --------------------------------------------------------------------------------------------------- */
+
+.slogan div:first-child,
+.slogan div:nth-child(2) {
+    font-family: my-header-font;
+    text-align: center;
+}
+
+.slogan div:first-child {
+    font-size: 1.4em;
+}
+
+.slogan div:nth-child(2) {
+    font-size: 2.3em;
+}
+
+.slogan div:last-child {
+    font-size: 2em;
+    font-family: my-content-font;
+    margin: 0 5%;
+    text-align: center;
+}
+
+.slogan div:nth-child(3) {
+    height: 2px;
+    width: 20em;
+    background-color: black;
+    margin: 20px auto;
+}
+
+
+/* ------------------------------------------------------------------Service --------------------------------------------------------------------------------------------------- */
+
+.services{
+    padding:5%;
+}
+
+.col-service-image img {
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.4);
+}
+
+.col-service-image,
+.col-service-content {
+    display: inline-block;
+}
+
+.service-header {
+    font-family: my-header-font;
+    font-weight: 500;
+}
+
+.service-line {
+    width: 18em;
+    height: 1.8px;
+    background-color: black;
+}
+
+.col-service-content p {
+    font-family: my-content-font;
+    margin: 0;
+}
+
+/* ------------------------------------------------------------------------------Testimonials----------------------------------------------------------------------------------- */
+
+.testimonials {
+    padding: 3% 5% 3% 5%;
+    height: calc(100% + 50px);
+}
+
+figure {
+    font-size: 18px;
+    background: #F8F8FF;
+    display: block;
+    margin: 1.5em;
+    padding: .5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+figure backquote {
+    font-family: my-header-font;
+    padding: 0.5em;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+figure img {
+    border-radius: 50%;
+    height: 4em;
+}
+
+figcaption {
+    font-family: my-content-font;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+}
+
+.glider-contain {
+    width: 85%;
+}
+
+.glider-contain h1 {
+    color: #F8F8FF;
+    text-align: center;
+}
+
+.glider-prev {
+    left: -7%;
+    top: 50%;
+}
+
+.glider-next {
+    right: -7%;
+    top: 50%;
+}
+
+.footer-bg-color{
+    background-color: #646C79;
+}
+
+
+/* ------------------------------------------------------------------------------Media Query----------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------Extra Small Device (phones) --------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+    .divtext {
+        font-size: 27px;
+    }
+    .curve-svg{
+        height: 1.5rem;
+    }
+    .slogan div:first-child {
+        font-size: 1em;
+    }
+    .slogan div:nth-child(2) {
+        font-size: 1.7em;
+    }
+    .slogan div:nth-child(3) {
+        width: 15em;
+    }
+    .slogan diV:last-child {
+        font-size: 1.1em;
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .service-header {
+        margin-top: 20px;
+        font-size: 1.7em;
+    }
+    .col-service-content p {
+        line-height: 30px;
+    }
+    .col-service-image img {
+        width: 246px;
+        border-radius: 100%;
+        margin: 0 auto;
+    }
+    .col-service-image,
+    .col-service-content {
+        text-align: center;
+        display: block;
+        width: 100vw;
+    }
+    .service-line {
+        width: 14em;
+        margin: 1em auto;
+    }
+    figure {
+        font-size: 2vw;
+    }
+    .glider-contain h1 {
+        font-size: 5vw;
+        margin: 0;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------Small Device (potrait tablets and large phone) -------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 600px) {
+    .divtext {
+        font-size: 33.6px;
+    }
+    .curve-svg{
+        height: 4rem;
+    }
+    .slogan div:first-child {
+        font-size: 1.2em;
+    }
+    .slogan div:nth-child(2) {
+        font-size: 1.9em;
+    }
+    .slogan div:last-child {
+        font-size: 1.2em;
+    }
+    .service-header {
+        margin-top: 20px;
+        font-size: 2em;
+    }
+    .col-service-content p {
+        line-height: 30px;
+    }
+    .col-service-image img {
+        width: 300px;
+        border-radius: 100%;
+        margin: 0 auto;
+    }
+    .col-service-image,
+    .col-service-content {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    .service-line {
+        width: 18em;
+        margin: 1em auto;
+    }
+    figure {
+        font-size: 10px;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------Medium Device (landscape tablets)-------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+    .divtext {
+        font-size: 36.8px;
+    }
+    .curve-svg{
+        height: 5rem;
+    }
+    .slogan div:first-child {
+        font-size: 1.6em;
+    }
+    .slogan div:nth-child(2) {
+        font-size: 2.3em;
+    }
+    .slogan div:last-child {
+        font-size: 1.4em;
+    }
+    .col-service-image {
+        width: 200px;
+        margin-right: 60px;
+    }
+    .image-right-lg {
+        margin: 0 0 0 60px;
+    }
+    .col-service-content {
+        width: calc(90% - 190px);
+    }
+    .service-header {
+        margin-top: 15px;
+    }
+    .col-service-content p {
+        font-size: 1em;
+        line-height: 30px;
+    }
+    .service-header {
+        font-size: 2em;
+    }
+    .service-line {
+        width: 14em;
+    }
+    .col-service-image img {
+        width: 100%;
+    }
+    .col-service-image,
+    .col-service-content {
+        text-align: unset;
+        display: inline-block;
+    }
+    .service-line {
+        margin: 1em 0;
+        height: 2px;
+    }
+    .graphic-design .col-service-content{
+        text-align: right;
+    }
+    .graphic-design .col-service-content p{
+        margin-top: 44px;
+    }
+    
+    .graphic-design .col-service-content .service-line{
+        float: right;
+    }
+    
+    .social-media .service-line {
+        width: 14em;
+    }
+    .graphic-design .service-line {
+        width: 16em;
+    }
+    .digital-growth .service-line {
+        width: 15em;
+    }
+    figure {
+        font-size: 12px;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------Large device (laptop and desktop)--------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 992px) {
+    .divtext {
+        font-size: 40px;
+    }
+    .header {
+        position: relative;
+        height: 80vh;
+        background-size: cover;
+    }
+    .curve-svg{
+        height: 6rem;
+    }
+    .col-service-image {
+        width: 250px;
+        margin-right: 100px;
+    }
+    .image-right-lg {
+        margin: 0 0 0 100px;
+    }
+    .col-service-content {
+        width: calc(90% - 260px);
+    }
+    .service-header {
+        margin-top: 40px;
+    }
+    .col-service-content p {
+        font-size: 1em;
+        line-height: 35px;
+    }
+    .service-header {
+        font-size: 2em;
+    }
+    .service-line {
+        height: 2.4px;
+    }
+    .social-media .service-line {
+        width: 14em;
+    }
+    .graphic-design .service-line {
+        width: 16em;
+    }
+    .digital-growth .service-line {
+        width: 15.5em;
+    }
+    figure {
+        font-size: 14px;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------extra Large device (large laptop and desktop)--------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1200px) {
+    .divtext {
+        font-size: 43.2px;
+    }
+    .curve-svg{
+        height: 7rem;
+    }
+    .slogan div:first-child {
+        font-size: 1.5em;
+    }
+    .slogan div:last-child {
+        font-size: 1.3em;
+    }
+    .col-service-content {
+        width: calc(90% - 291px);
+    }
+    .col-service-image {
+        width: 300px;
+    }
+    .service-header {
+        margin-top: 43px;
+    }
+    .col-service-content p {
+        font-size: 1.2em;
+        line-height: 40px;
+    }
+    .service-header {
+        font-size: 2.4em;
+    }
+    .social-media .service-line {
+        width: 17em;
+    }
+    .graphic-design .service-line {
+        width: 19.5em;
+    }
+    .digital-growth .service-line {
+        width: 18.5em;
+    }
+    figure {
+        font-size: 16px;
+    }
+}

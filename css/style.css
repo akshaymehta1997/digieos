@@ -1,20 +1,20 @@
 .row {
-    margin-top: 3em;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+  margin-top: 3em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    min-width: 100%;
-    background-color: #F8F8FF;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  min-width: 100%;
+  background-color: #F8F8FF;
 }
 
 h1,
@@ -23,735 +23,262 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: my-header-font;
+  font-family: my-header-font;
 }
 
 .bg-dark {
-    background-color: #2A2C3B;
+  background-color: #2A2C3B;
 }
 
 .bg-light{
-    background-color: #F8F8FF;
+  background-color: #F8F8FF;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @font-face {
-    font-family: my-content-font;
-    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+  font-family: my-content-font;
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
 }
 
 @font-face {
-    font-family: my-header-font;
-    src: url('../fonts/Raleway/static/Raleway-SemiBold.ttf');
+  font-family: my-header-font;
+  src: url('../fonts/Raleway/static/Raleway-SemiBold.ttf');
 }
 
 section {
-    color: #2A2C3B;
+  color: #2A2C3B;
 }
-
-.btn {
-    display: inline-block;
-    font-size: 0.45em;
-    color: white;
-    background-color: transparent;
-    border: 1px solid white;
-    padding: 1em 2em;
-    border-radius: 30px;
-}
-
-.btn:hover {
-    color: #684b38;
-    background-color: white;
-    text-decoration: none;
-    text-shadow: none;
-}
-
-.btn:focus {
-    outline: none;
-}
-
-
-/* ----------------------------------------------------------------------------------Header------------------------------------------------------------------ */
-
-.header {
-    position: relative;
-    height: 50vh;
-    min-height: 320px;
-    width: 100%;
-    background-image: url('../assets/images/home/bgheader.jpg');
-    background-color: #A57359;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.header-overlay {
-    height: 100%;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-    z-index: 1;
-    opacity: 0.40;
-}
-
-.curve-svg{
-    height: rem;
-    width: 100vw;
-}
-
-.relative{
-    position: relative;
-}
-.svg-header{
-    position: absolute;
-    bottom: -0.8px;
-    left: 0;
-    z-index: 10;
-}
-.header-logo {
-    height: 5em;
-}
-
-.divtext div {
-    margin: 25px auto;
-}
-
-.divtext {
-    z-index: 3;
-    color: white;
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-}
-
 
 /* -----------------------------------------------------NavBar------------------------------------------------------------------------ */
 
 nav {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    height: 60px;
-    background: transparent;
-    width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 60px;
+  background: transparent;
+  width: 100vw;
 }
 
 .svgLogo {
-    line-height: 40px;
-    position: fixed;
-    left: 5em;
-    top: 10px;
+  line-height: 40px;
+  position: fixed;
+  left: 5em;
+  top: 10px;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    width: 50%;
-    height: 100%;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: auto;
-    padding-right: 5em;
-    z-index: 1003;
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 5em;
+  z-index: 1003;
 }
 
 .nav-links li a {
-    font-family: my-header-font;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    z-index: 1005;
-    transition: all 0.5ms ease-out;
-    position: relative;
+  font-family: my-header-font;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  z-index: 1005;
+  transition: all 0.5ms ease-out;
+  position: relative;
 }
 
 .nav-links li a::before {
-    content: '';
-    display: block;
-    height: 2px;
-    background: white;
-    position: absolute;
-    bottom: -0.30em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
+  content: '';
+  display: block;
+  height: 2px;
+  background: white;
+  position: absolute;
+  bottom: -0.30em;
+  left: 0;
+  right: 0;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 250ms;
 }
 
 .nav-links li a:hover::before {
-    transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 .nav-scrolled {
-    background-color: #2A2C3B;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-    transition: all 1s;
-}
-
-
-/* ------------------------------------------------------------------Slogan --------------------------------------------------------------------------------------------------- */
-
-.slogan div:first-child,
-.slogan div:nth-child(2) {
-    font-family: my-header-font;
-    text-align: center;
-}
-
-.slogan div:first-child {
-    font-size: 1.4em;
-}
-
-.slogan div:nth-child(2) {
-    font-size: 2.3em;
-}
-
-.slogan div:last-child {
-    font-size: 2em;
-    font-family: my-content-font;
-    margin: 0 5%;
-    text-align: center;
-}
-
-.slogan div:nth-child(3) {
-    height: 2px;
-    width: 20em;
-    background-color: black;
-    margin: 20px auto;
-}
-
-
-/* ------------------------------------------------------------------Service --------------------------------------------------------------------------------------------------- */
-
-.services{
-    padding:5%;
-}
-
-.col-service-image img {
-    width: 100%;
-    border-radius: 100%;
-    box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.4);
-}
-
-.col-service-image,
-.col-service-content {
-    display: inline-block;
-}
-
-.service-header {
-    font-family: my-header-font;
-    font-weight: 500;
-}
-
-.service-line {
-    width: 18em;
-    height: 1.8px;
-    background-color: black;
-}
-
-.col-service-content p {
-    font-family: my-content-font;
-    margin: 0;
-}
-
-/* ------------------------------------------------------------------------------Testimonials----------------------------------------------------------------------------------- */
-
-.testimonials {
-    padding: 3% 5% 3% 5%;
-    height: calc(100% + 50px);
-}
-
-figure {
-    font-size: 18px;
-    background: #F8F8FF;
-    display: block;
-    margin: 1.5em;
-    padding: .5em;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-figure backquote {
-    font-family: my-header-font;
-    padding: 0.5em;
-    font-size: 1.3em;
-    font-style: italic;
-}
-
-figure img {
-    border-radius: 50%;
-    height: 4em;
-}
-
-figcaption {
-    font-family: my-content-font;
-    margin-bottom: 1em;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: gray;
-}
-
-.glider-contain {
-    width: 85%;
-}
-
-.glider-contain h1 {
-    color: #F8F8FF;
-    text-align: center;
-}
-
-.glider-prev {
-    left: -7%;
-    top: 50%;
-}
-
-.glider-next {
-    right: -7%;
-    top: 50%;
-}
-
-.footer-bg-color{
-    background-color: #646C79;
+  background-color: #2A2C3B;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  transition: all 1s;
 }
 
 /* ------------------------------------------------------------------------------Footer----------------------------------------------------------------------------------- */
 
 .footer {
-    background-image: url("../assets/images/ps2pdf.com.webp");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    /* background-color: #646C79; */
-    margin-bottom: 0;
-    padding-bottom: 0;
+  background-image: url("../assets/images/ps2pdf.com.webp");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  /* background-color: #646C79; */
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .footer-items {
-    background-color: rgba(42, 44, 59, 0.7);
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3% 0 1% 0;
+  background-color: rgba(42, 44, 59, 0.7);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0 1% 0;
 }
 
 .brand-outline {
-    display: inline-block;
-    text-align: center;
-    border: 3px solid white;
-    border-radius: 50%;
-    color: white;
-    margin-left: 0.35em;
-    margin-right: 0.35em;
-    margin-bottom: 0.5em;
+  display: inline-block;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 50%;
+  color: white;
+  margin-left: 0.35em;
+  margin-right: 0.35em;
+  margin-bottom: 0.5em;
 }
 
 .policy {
-    display: inline-block;
-    font-family: my-content-font;
-    margin-bottom: 1em;
-    font-size: 1em;
-    font-weight: bold;
-    color: white;
+  display: inline-block;
+  font-family: my-content-font;
+  margin-bottom: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
 }
 
 .policy div a:first-child {
-    color: #ff4e2e;
+  color: #ff4e2e;
 }
 
-/* ------------------------------------------------------------------------------Media Query----------------------------------------------------------------------------------- */
 
+/* ------------------------------------------------------------------------------Media Query----------------------------------------------------------------------------------- */
 
 /* -----------------------------------------------------------------------------------Navbar-mobile--------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 768px) {
-    .line {
-        width: 30px;
-        height: 3px;
-        background: white;
-        margin: 5px;
-        z-index: 1004;
-    }
-    .hamburger {
-        position: absolute;
-        cursor: pointer;
-        right: 35px;
-        top: 35px;
-        transform: translate(-5%, -50%);
-        z-index: 1004;
-    }
-    .nav-links {
-        position: fixed;
-        right: 0;
-        background: rgba(15, 17, 29, 0.83);
-        height: 60vh;
-        width: 100%;
-        display: block;
-        clip-path: circle(0px at 90% -20%);
-        -webkit-clip-path: circle(0px at 90% -20%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-        z-index: 1000;
-    }
-    .nav-links.open {
-        clip-path: circle(450px at 90% -10%);
-        -webkit-clip-path: circle(450px at 90% -10%);
-        pointer-events: all;
-        height: 410px;
-    }
-    .nav-links li {
-        opacity: 0;
-        text-align: right;
-        margin-right: 20%;
-        margin-top: 50px;
-    }
-    .nav-links li a {
-        font-size: 18px;
-    }
-    .nav-links li:nth-child(1) {
-        transition: all 0.5s ease 0.2s;
-    }
-    .nav-links li:nth-child(2) {
-        transition: all 0.5s ease 0.4s;
-    }
-    .nav-links li:nth-child(3) {
-        transition: all 0.5s ease 0.6s;
-    }
-    li.fade {
-        opacity: 1;
-    }
+  .line {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 5px;
+      z-index: 1004;
+  }
+  .hamburger {
+      position: absolute;
+      cursor: pointer;
+      right: 35px;
+      top: 35px;
+      transform: translate(-5%, -50%);
+      z-index: 1004;
+  }
+  .nav-links {
+      position: fixed;
+      right: 0;
+      background: rgba(15, 17, 29, 0.83);
+      height: 60vh;
+      width: 100%;
+      display: block;
+      clip-path: circle(0px at 90% -20%);
+      -webkit-clip-path: circle(0px at 90% -20%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+      z-index: 1000;
+  }
+  .nav-links.open {
+      clip-path: circle(450px at 90% -10%);
+      -webkit-clip-path: circle(450px at 90% -10%);
+      pointer-events: all;
+      height: 410px;
+  }
+  .nav-links li {
+      opacity: 0;
+      text-align: right;
+      margin-right: 20%;
+      margin-top: 50px;
+  }
+  .nav-links li a {
+      font-size: 18px;
+  }
+  .nav-links li:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+  }
+  li.fade {
+      opacity: 1;
+  }
 }
-
-
-/* ------------------------------------------------------------------------------Extra Small Device (phones) --------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 600px) {
-    .divtext {
-        font-size: 27px;
-    }
-    .curve-svg{
-        height: 1.5rem;
-    }
-    .slogan div:first-child {
-        font-size: 1em;
-    }
-    .slogan div:nth-child(2) {
-        font-size: 1.7em;
-    }
-    .slogan div:nth-child(3) {
-        width: 15em;
-    }
-    .slogan diV:last-child {
-        font-size: 1.1em;
-    }
-    .hamburger {
-        right: 20px;
-    }
-    .service-header {
-        margin-top: 20px;
-        font-size: 1.7em;
-    }
-    .col-service-content p {
-        line-height: 30px;
-    }
-    .col-service-image img {
-        width: 246px;
-        border-radius: 100%;
-        margin: 0 auto;
-    }
-    .col-service-image,
-    .col-service-content {
-        text-align: center;
-        display: block;
-        width: 100vw;
-    }
-    .service-line {
-        width: 14em;
-        margin: 1em auto;
-    }
-    figure {
-        font-size: 2vw;
-    }
-    .glider-contain h1 {
-        font-size: 5vw;
-        margin: 0;
-    }
-    .brand-outline {
-        line-height: 38px;
-        font-size: 20px;
-        height: 40px;
-        width: 40px;
-        margin-left: 0.25em;
-        margin-right: 0.25em;
-    }
-    .footer-items {
-        padding-bottom: 1em;
-    }
+  .brand-outline {
+    line-height: 38px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+  }
+  .footer-items {
+      padding-bottom: 1em;
+  }
 }
-
-
-/* ------------------------------------------------------------------------------Small Device (potrait tablets and large phone) -------------------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 600px) {
-    .divtext {
-        font-size: 33.6px;
-    }
-    .curve-svg{
-        height: 4rem;
-    }
-    .slogan div:first-child {
-        font-size: 1.2em;
-    }
-    .slogan div:nth-child(2) {
-        font-size: 1.9em;
-    }
-    .slogan div:last-child {
-        font-size: 1.2em;
-    }
-    .service-header {
-        margin-top: 20px;
-        font-size: 2em;
-    }
-    .col-service-content p {
-        line-height: 30px;
-    }
-    .col-service-image img {
-        width: 300px;
-        border-radius: 100%;
-        margin: 0 auto;
-    }
-    .col-service-image,
-    .col-service-content {
-        text-align: center;
-        display: block;
-        width: 100%;
-    }
-    .service-line {
-        width: 18em;
-        margin: 1em auto;
-    }
-    figure {
-        font-size: 10px;
-    }
-    .brand-outline {
-        line-height: 42px;
-        font-size: 20px;
-        height: 45px;
-        width: 45px;
-    }
+  .brand-outline {
+    line-height: 42px;
+    font-size: 20px;
+    height: 45px;
+    width: 45px;
+  }
 }
-
-
-/* ------------------------------------------------------------------------------Medium Device (landscape tablets)-------------------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 768px) {
-    .divtext {
-        font-size: 36.8px;
-    }
-    .curve-svg{
-        height: 5rem;
-    }
-    .slogan div:first-child {
-        font-size: 1.6em;
-    }
-    .slogan div:nth-child(2) {
-        font-size: 2.3em;
-    }
-    .slogan div:last-child {
-        font-size: 1.4em;
-    }
-    .col-service-image {
-        width: 200px;
-        margin-right: 60px;
-    }
-    .image-right-lg {
-        margin: 0 0 0 60px;
-    }
-    .col-service-content {
-        width: calc(90% - 190px);
-    }
-    .service-header {
-        margin-top: 15px;
-    }
-    .col-service-content p {
-        font-size: 1em;
-        line-height: 30px;
-    }
-    .service-header {
-        font-size: 2em;
-    }
-    .service-line {
-        width: 14em;
-    }
-    .col-service-image img {
-        width: 100%;
-    }
-    .col-service-image,
-    .col-service-content {
-        text-align: unset;
-        display: inline-block;
-    }
-    .service-line {
-        margin: 1em 0;
-        height: 2px;
-    }
-    .graphic-design .col-service-content{
-        text-align: right;
-    }
-    .graphic-design .col-service-content p{
-        margin-top: 44px;
-    }
-    
-    .graphic-design .col-service-content .service-line{
-        float: right;
-    }
-    
-    .social-media .service-line {
-        width: 14em;
-    }
-    .graphic-design .service-line {
-        width: 16em;
-    }
-    .digital-growth .service-line {
-        width: 15em;
-    }
-    figure {
-        font-size: 12px;
-    }
-    .brand-outline {
-        line-height: 50px;
-        font-size: 24px;
-        height: 50px;
-        width: 50px;
-    }
+  .brand-outline {
+    line-height: 50px;
+    font-size: 24px;
+    height: 50px;
+    width: 50px;
+  }
 }
-
-
-/* ------------------------------------------------------------------------------Large device (laptop and desktop)--------------------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 992px) {
-    .divtext {
-        font-size: 40px;
-    }
-    .header {
-        position: relative;
-        height: 80vh;
-        background-size: cover;
-    }
-    .curve-svg{
-        height: 6rem;
-    }
-    .col-service-image {
-        width: 250px;
-        margin-right: 100px;
-    }
-    .image-right-lg {
-        margin: 0 0 0 100px;
-    }
-    .col-service-content {
-        width: calc(90% - 260px);
-    }
-    .service-header {
-        margin-top: 40px;
-    }
-    .col-service-content p {
-        font-size: 1em;
-        line-height: 35px;
-    }
-    .service-header {
-        font-size: 2em;
-    }
-    .service-line {
-        height: 2.4px;
-    }
-    .social-media .service-line {
-        width: 14em;
-    }
-    .graphic-design .service-line {
-        width: 16em;
-    }
-    .digital-growth .service-line {
-        width: 15.5em;
-    }
-    figure {
-        font-size: 14px;
-    }
-    .brand-outline {
-        line-height: 54px;
-        font-size: 28px;
-        height: 54px;
-        width: 54px;
-    }
+  .brand-outline {
+    line-height: 54px;
+    font-size: 28px;
+    height: 54px;
+    width: 54px;
+  }
 }
 
-
-/* ------------------------------------------------------------------------------extra Large device (large laptop and desktop)--------------------------------------------------------------------------------------- */
-
 @media only screen and (min-width: 1200px) {
-    .divtext {
-        font-size: 43.2px;
-    }
-    .curve-svg{
-        height: 7rem;
-    }
-    .nav-links li a {
-        font-size: 19px;
-    }
-    .slogan div:first-child {
-        font-size: 1.5em;
-    }
-    .slogan div:last-child {
-        font-size: 1.3em;
-    }
-    .col-service-content {
-        width: calc(90% - 291px);
-    }
-    .col-service-image {
-        width: 300px;
-    }
-    .service-header {
-        margin-top: 43px;
-    }
-    .col-service-content p {
-        font-size: 1.2em;
-        line-height: 40px;
-    }
-    .service-header {
-        font-size: 2.4em;
-    }
-    .social-media .service-line {
-        width: 17em;
-    }
-    .graphic-design .service-line {
-        width: 19.5em;
-    }
-    .digital-growth .service-line {
-        width: 18.5em;
-    }
-    figure {
-        font-size: 16px;
-    }
-    .brand-outline {
-        line-height: 64px;
-        font-size: 30px;
-        height: 64px;
-        width: 64px;
-    }
+  .nav-links li a {
+    font-size: 19px;
+  }
+
+  .brand-outline {
+    line-height: 64px;
+    font-size: 30px;
+    height: 64px;
+    width: 64px;
+  }
 }
