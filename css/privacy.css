@@ -1,39 +1,56 @@
-.privacy-policy {
+.main-content {
   margin-left: 10%;
   margin-right: 10%;
   padding: 5%;
   margin-top: 100px;
   margin-bottom: 50px;
 }
-
-.privacy-policy a {
+/* 
+.main-content a {
   color: chocolate;
 }
+
+.main-content h1 {
+  font-size: 30px;
+} */
 
 nav {
   background-color: #2a2c3b;
 }
 
-.privacy-policy h1 {
-  font-size: 30px;
+
+.main-content .header div:nth-child(1) {
+  font-size: 2.3em;
+  font-family: my-header-font;
+  text-align: center;
 }
 
+.main-content .semi-header{
+  font-size: 0.8em;
+}
+
+.main-content .slogan-line {
+  width: 13em;
+  margin-bottom: 2em;
+}
+
+
 @media only screen and (max-width: 768px) {
-  .privacy-policy {
+  .main-content {
       margin-top: 60px;
       margin-bottom: 20px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .privacy-policy {
+  .main-content {
       margin-top: 80px;
       margin-bottom: 35px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .privacy-policy {
+  .main-content {
       margin-bottom: 50px;
   }
 }
