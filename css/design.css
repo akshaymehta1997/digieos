@@ -29,7 +29,7 @@
 
 @media only screen and (max-width: 600px) {
     .portfolio {
-        grid-template-rows: repeat(14, 16vw);
+        grid-template-rows: repeat(11, 16vw);
         grid-template-columns: repeat(4, 16vw);
     }
     .brief p {
