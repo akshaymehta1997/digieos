@@ -19,9 +19,32 @@
     grid-column: span 1;
 }
 
+.brief p {
+    font-size: 1.2em;
+}
+
+.brief {
+    margin-bottom: 50px;
+}
+
 @media only screen and (max-width: 600px) {
     .portfolio {
         grid-template-rows: repeat(14, 16vw);
         grid-template-columns: repeat(4, 16vw);
+    }
+    .brief p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .brief p {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .brief p {
+        font-size: 20px;
     }
 }
