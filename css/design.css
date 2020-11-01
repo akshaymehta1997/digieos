@@ -1,0 +1,31 @@
+.portfolio {
+  display: grid;
+  grid-template-rows: repeat(14, 19vw);
+  grid-template-columns: repeat(4, 19vw);
+  grid-gap: 10px;
+  /* height: 100%; */
+}
+
+.portfolio-item {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 1.5em;
+  background-size: cover;
+  background-position: top left;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
+}  
+
+.one {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.two {
+  grid-row: span 1;
+  grid-column: span 1;
+}
