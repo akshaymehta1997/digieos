@@ -19,6 +19,14 @@
 
 
     <title>Digieos</title>
+    <style>
+      /* Set the size of the div element that contains the map */
+      
+      #map {
+          height: 400px;
+          width: 100%;
+      }
+  </style>
 </head>
 
 <body>
@@ -100,6 +108,8 @@
         </section>
     </section>
 
+    <div id="map"></div>
+
       <section class="footer">
           <div class="footer-items">
               <div class="brands">
@@ -137,7 +147,28 @@
           </div>
       </section>
   
-  
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ7YxMkf061rJqtoGVjB2R6oeELEKYrZc&callback=initMap" type="text/javascript"></script>
+
+      <script>
+          // Initialize and add the map
+          function initMap() {
+              // The location of Uluru
+              const uluru = {
+                  lat: 72.966480,
+                  lng: 19.176080
+              };
+              // The map, centered at Uluru
+              const map = new google.maps.Map(document.getElementById("map"), {
+                  zoom: 12,
+                  center: uluru,
+              });
+              // The marker, positioned at Uluru
+              const marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map,
+              });
+          }
+      </script>
       <!-- scripts -->
       <script src="js/js/jquerry.js"></script>
       <script src="js/js/bootstrap.min.js"></script>
