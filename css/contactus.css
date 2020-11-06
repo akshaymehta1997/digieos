@@ -228,11 +228,37 @@ textarea.form-control {
   border-radius:.3rem
 }
 
-option{
-  font-size: 10px;
-  width: 100px !important;
+.contact-info div > span{
+  font-family: my-header-font;
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+  /* margin-top: 60px; */
 }
 
-select {
-  width: auto !important;
+.contact-info div > span + span{
+  margin-left: 10px;
+}
+
+.contact-info{
+  margin-bottom: 60px;
+  margin-left: 30px;
+}
+
+.contact-data div{
+  margin-left: -5px;
+}
+
+.contact-data{
+  margin-left: 35px;
+} 
+
+.col-lg-6:nth-child(2){
+  margin-top: 60px;
+}
+
+@media only screen and (min-width: 992px) {
+  .col-lg-6:nth-child(2){
+    margin-top: 30px;
+  }
 }
