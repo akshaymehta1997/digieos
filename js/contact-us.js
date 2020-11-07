@@ -6,22 +6,26 @@ document.querySelector(".hamburger").addEventListener("click", () => {
 });
 
 let btn =document.getElementsByTagName("button");
+let line=document.querySelector("#line");
 function toggleclass() {
     let stringAdd = "";
     let stringRemove = "";
     if (window.matchMedia("(max-width: 600px)").matches) {  
       stringAdd="btn-sm";
       stringRemove="btn-lg"
+      line.innerHTML=`<div></div><div class="slogan-line"></div>`
     }
-    else if (window.matchMedia("(max-width: 1082px)").matches) {  
+    else if (window.matchMedia("(max-width: 992px)").matches) {  
       stringAdd="";
       stringRemove="btn-lg"
+      line.innerHTML=`<div></div><div class="slogan-line"></div>`
     }    
     else {      
       stringAdd="btn-lg";
       stringRemove="btn-sm"
+      line.innerHTML=``
     }
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 2; index++) {
       if(stringAdd==""){
         btn[index].classList.remove("btn-sm");
       }
@@ -34,5 +38,4 @@ function toggleclass() {
 
 toggleclass();
 
-
-window.addEventListener('resize', toggleclass)
+window.addEventListener('resize', toggleclass);
