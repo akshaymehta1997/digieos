@@ -37,21 +37,18 @@ nav {
 
 @media only screen and (max-width: 768px) {
   .main-content {
-      margin-top: 100px;
       margin-bottom: 20px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .main-content {
-      margin-top: 80px;
-      margin-bottom: 35px;
+      margin-bottom: 83px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .main-content {
-      margin-top: 100px;
       margin-bottom: 100px;
   }
 }
