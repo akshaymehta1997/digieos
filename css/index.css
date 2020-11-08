@@ -102,11 +102,13 @@
 /* ------------------------------------------------------------------Service --------------------------------------------------------------------------------------------------- */
 
 .services{
-    /* margin: 5%; */
+    margin: 5%;
 }
+
 .service-col{
     text-align: center;
     margin-bottom: 30px;
+    max-width: 100%;
 }
 
 .col-service-image img {
@@ -120,7 +122,10 @@
     margin: 0 auto;
 }
 
-.service-col p{}
+.service-col p{
+    margin: 0;
+    padding: 5%;
+}
 
 .service-header {
     font-family: my-header-font;
@@ -210,6 +215,9 @@ figcaption {
 /* ------------------------------------------------------------------------------Extra Small Device (phones) --------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 600px) {
+    .col-md-4{
+        padding: 0 !important;
+    }
     .divtext {
         font-size: 27px;
     }
