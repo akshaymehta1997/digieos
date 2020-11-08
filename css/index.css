@@ -331,7 +331,7 @@ figcaption {
         font-size: 1.4em;
     }
     .col-service-image {
-        width: 250px;
+        /* width: 250px; */
     }
     .service-header {
         margin-top: 20px;
@@ -341,7 +341,7 @@ figcaption {
         line-height: 30px;
     }
     .service-header {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .service-line {
         width: 14em;
@@ -354,13 +354,13 @@ figcaption {
     }
     
     .social-media .service-line {
-        width: 14em;
+        width: 11em;
     }
     .graphic-design .service-line {
-        width: 16em;
+        width: 12em;
     }
     .digital-growth .service-line {
-        width: 15em;
+        width: 12em;
     }
     figure {
         font-size: 12px;
@@ -382,7 +382,7 @@ figcaption {
         height: 6rem;
     }
     .col-service-image {
-        width: 280px;
+        width: 250px;
     }
     .col-service-content p {
         font-size: 1em;
@@ -430,6 +430,9 @@ figcaption {
     .col-service-content p {
         font-size: 1.2em;
         line-height: 40px;
+    }
+    .col-service-image  {
+        width: 250px;
     }
     .service-header {
         font-size: 2.4em;

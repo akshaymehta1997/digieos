@@ -129,19 +129,18 @@ nav {
 /* ------------------------------------------------------------------------------Footer----------------------------------------------------------------------------------- */
 
 .footer {
-  background-image: url("../blue-1634110_960_720.webp");
+  background-image: url("../assets/images/footer.webp");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  /* background-color: #646C79; */
+  background-color: #646C79;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .footer-items {
   background-color: rgb(56, 59, 80,0.7);
-  /* background-color: rgba(42, 44, 59, 0.7); */
   width: 100%;
   text-align: center;
   display: flex;
