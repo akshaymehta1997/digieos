@@ -225,6 +225,7 @@ figcaption {
         height: 1.5rem;
     }
     .slogan div:first-child {
+        margin-top: 50px;
         font-size: 1em;
     }
     .slogan div:nth-child(2) {
@@ -240,7 +241,7 @@ figcaption {
         right: 20px;
     }
     .service-header {
-        margin-top: 20px;
+        margin-top: 3px;
         font-size: 1.7em;
     }
     .col-service-content p {
