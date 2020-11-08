@@ -129,7 +129,7 @@ nav {
 /* ------------------------------------------------------------------------------Footer----------------------------------------------------------------------------------- */
 
 .footer {
-  background-image: url("../assets/footer1.jpeg");
+  background-image: url("../blue-1634110_960_720.webp");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -140,7 +140,8 @@ nav {
 }
 
 .footer-items {
-  background-color: rgba(42, 44, 59, 0.7);
+  background-color: rgb(56, 59, 80,0.7);
+  /* background-color: rgba(42, 44, 59, 0.7); */
   width: 100%;
   text-align: center;
   display: flex;
