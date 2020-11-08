@@ -102,19 +102,25 @@
 /* ------------------------------------------------------------------Service --------------------------------------------------------------------------------------------------- */
 
 .services{
-    padding:5%;
+    margin: 5%;
+}
+.service-col{
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .col-service-image img {
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
     border-radius: 100%;
     box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.4);
 }
 
-.col-service-image,
-.col-service-content {
-    display: inline-block;
+.col-service-image{
+    margin: 0 auto;
 }
+
+.service-col p{}
 
 .service-header {
     font-family: my-header-font;
@@ -125,6 +131,7 @@
     width: 18em;
     height: 1.8px;
     background-color: black;
+    margin: 1em auto;
 }
 
 .col-service-content p {
@@ -233,8 +240,6 @@ figcaption {
     }
     .col-service-image img {
         width: 246px;
-        border-radius: 100%;
-        margin: 0 auto;
     }
     .col-service-image,
     .col-service-content {
@@ -244,7 +249,6 @@ figcaption {
     }
     .service-line {
         width: 14em;
-        margin: 1em auto;
     }
     figure {
         font-size: 2vw;
@@ -283,8 +287,6 @@ figcaption {
     }
     .col-service-image img {
         width: 300px;
-        border-radius: 100%;
-        margin: 0 auto;
     }
     .col-service-image,
     .col-service-content {
@@ -294,7 +296,6 @@ figcaption {
     }
     .service-line {
         width: 18em;
-        margin: 1em auto;
     }
     figure {
         font-size: 10px;
@@ -321,17 +322,10 @@ figcaption {
         font-size: 1.4em;
     }
     .col-service-image {
-        width: 200px;
-        margin-right: 60px;
-    }
-    .image-right-lg {
-        margin: 0 0 0 60px;
-    }
-    .col-service-content {
-        width: calc(90% - 190px);
+        width: 250px;
     }
     .service-header {
-        margin-top: 15px;
+        margin-top: 20px;
     }
     .col-service-content p {
         font-size: 1em;
@@ -346,24 +340,8 @@ figcaption {
     .col-service-image img {
         width: 100%;
     }
-    .col-service-image,
-    .col-service-content {
-        text-align: unset;
-        display: inline-block;
-    }
     .service-line {
-        margin: 1em 0;
         height: 2px;
-    }
-    .graphic-design .col-service-content{
-        text-align: right;
-    }
-    .graphic-design .col-service-content p{
-        margin-top: 44px;
-    }
-    
-    .graphic-design .col-service-content .service-line{
-        float: right;
     }
     
     .social-media .service-line {
@@ -380,7 +358,6 @@ figcaption {
     }
 }
 
-
 /* ------------------------------------------------------------------------------Large device (laptop and desktop)--------------------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 992px) {
@@ -396,17 +373,7 @@ figcaption {
         height: 6rem;
     }
     .col-service-image {
-        width: 250px;
-        margin-right: 100px;
-    }
-    .image-right-lg {
-        margin: 0 0 0 100px;
-    }
-    .col-service-content {
-        width: calc(90% - 260px);
-    }
-    .service-header {
-        margin-top: 40px;
+        width: 280px;
     }
     .col-service-content p {
         font-size: 1em;
@@ -448,14 +415,8 @@ figcaption {
     .slogan div:last-child {
         font-size: 1.3em;
     }
-    .col-service-content {
-        width: calc(90% - 291px);
-    }
     .col-service-image {
-        width: 300px;
-    }
-    .service-header {
-        margin-top: 43px;
+        width: 350px;
     }
     .col-service-content p {
         font-size: 1.2em;
@@ -468,7 +429,7 @@ figcaption {
         width: 17em;
     }
     .graphic-design .service-line {
-        width: 19.5em;
+        width: 20em;
     }
     .digital-growth .service-line {
         width: 18.5em;
